@@ -98,3 +98,4 @@ To create a Telegram bot using the Telegram app, follow these steps:
 ### References
 
 - [Telegram bots documentation](https://core.telegram.org/bots)
+- [https://github.com/eyalzk/telegrad](https://github.com/eyalzk/telegrad)
