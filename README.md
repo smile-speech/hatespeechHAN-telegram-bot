@@ -41,6 +41,7 @@ Tested in the following environment:
    ```python
    # config.py
    TELEGRAM_BOT_TOKEN  = "TOKEN"  # replace TOKEN with your bot's token
+   TELEGRAM_USER_ID  = None # user id is optional, however highly recommended as it limits the access to you alone.
 
    # .gitignore
    config.py
@@ -56,10 +57,8 @@ Tested in the following environment:
 # Telegram Bot imports
 from detection_model import sentiment_analysis
 
-telegram_token = config.TELEGRAM_BOT_TOKEN  # replace TOKEN with your bot's token
-
-# user id is optional, however highly recommended as it limits the access to you alone.
-telegram_user_id = config.TELEGRAM_USER_ID   # replace None with your telegram user id (integer):
+telegram_token = config.TELEGRAM_BOT_TOKEN 
+telegram_user_id = config.TELEGRAM_USER_ID 
 
 # Create a sentiment_analysis instance
 bot = DLBot(token=telegram_token, user_id=telegram_user_id)
